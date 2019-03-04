@@ -1,0 +1,12 @@
+.Main-Header{
+    font-size: 5px;
+};
+.Main-Title{
+    font-size: 5px;
+};
+.grid-container {
+    display: grid;
+  };
+body{
+    background-color: black;
+};

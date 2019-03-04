@@ -1,0 +1,17 @@
+
+/* 
+tags
+ */
+ /* selector or tag name */
+selector{
+    property: value;
+    /* By ID*/
+    #title {
+
+    }
+    /* by class */
+    .paragraph{
+        margin: 10px;
+    }
+}
+

@@ -1,0 +1,34 @@
+
+/* 
+tags
+ */
+ /* selector or tag name */
+selector{
+    property: value;
+    /* By ID*/
+    #title {
+
+    }
+    /* by class */
+    .paragraph{
+        margin: 10px;
+    }
+}
+
+.mainhead{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgreen;
+    text-align: center;
+}
+.subhead{
+    text-align: center;
+}
+.paragraphs{
+line-height: 25px
+}
+.link{
+    text-decoration-line: none
+}
+.upper{
+    text-transform: uppercase
+}
