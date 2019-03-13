@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+ }
+ #flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+ }
+ .calcbox {
+    opacity: .8;
+    border: solid black 1px;
+    height: 200px;
+    width: 175px;
+    padding: 10px;
+    margin: 10px;
+ }
+ .calcform {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px;
+ }
+ input {
+    border: solid black 1px;
+    margin: 2px;
+ }
+ button {
+    border: solid black 1px;
+    margin: 2px;
+ }
+ #add {
+    background-color: darkolivegreen;
+ }
+ #subtract {
+    background-color: darkorange;
+ }
+ #multiply {
+    background-color: darkcyan;
+ }

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue
+}
+
+
+.destination{
+    display:flex;
+    color: black;
+    align-items: flex-start;
+    background-color: burlywood
+  
+}
+
+.food{
+    display:flex;
+    align-items: flex-end;
+    background-color: indianred
+
+
+}

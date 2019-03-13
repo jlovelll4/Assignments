@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form name="airline">
+            <input name="fname" placeholder="First Name"/>
+            <input name="lname" placeholder="Last Name"/> 
+            <input name="age" placeholder="Age"/>
+            <input name="gender" placeholder="Gender"/>
+            <div class="destination">
+                
+                Hawaii<input value="Hawaii" name="location" type="checkbox"
+                /> 
+                Australia<input value="Australia" name="location" type="checkbox" /> 
+                Zealand<input value="New Zealand" name="location" type="checkbox" />
+            </div> 
+            <div class="food">
+                Vegetarian<input value="Vegetarian" name="dietrestrictions" type="radio"/> 
+                Kosher<input value="Kosher" name="dietrestrictions" type="radio"/> 
+                Lactose Free<input value="Lactose Free" name="dietrestrictions" type="radio"/>
+            </div> 
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
