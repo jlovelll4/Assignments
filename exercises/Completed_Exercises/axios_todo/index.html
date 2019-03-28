@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Axios Todo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+    <div class="header"><h3>To Do List</h3></div>
+        <form class="todo" name="todo">
+            <label for="title" >
+                Title:
+            </label>
+            <input name="title" id="title">
+
+            <label for="price">
+                Price:
+            </label>
+            <input id="price" name="price">
+
+            <label for="image">
+                Image URL:
+            </label>
+            <input id="image" name="image">
+            
+            <button id="addToDo">Add Todo</button>
+        </form>
+    <div id="listContainer">
+        <div class="list-header">
+            <h3 class="header-title">Title</h3> 
+            <h3 class="header-price">Price</h3> 
+            <h3 class="header-done">Done</h3> 
+            <h3 class="header-image">Image</h3> 
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+/* *{
+    
+} */
+
+.container{
+    display: grid;
+    grid-template: 
+    [row1-start]"header headerdropdown" 200px[row1-end]
+    [row2-start]"main1 sidebarauthor" 600px[row2-end]
+    [row3-start]"main2 sidebarmenu"400px[row3-end]
+    [row4-start]"main3 sidebarblank"400px[row4-end]
+    [row5-start]"footer footer"250px[row5-end]
+    [row6-start]"footerlinks footerlinks"50px[row6-end]
+    / 60% 40%;
+
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+    }
+    
+    
+.header{
+    grid-area: header;
+    border: solid 2px coral;
+}
+.headerdropdown{
+    grid-area: headerdropdown;
+    border: solid 2px red;
+}
+
+.sidebarauthor{
+    grid-area: sidebarauthor;
+    border: solid 2px blue;
+}
+.sidebarmenu{
+    grid-area: sidebarmenu;
+    border: solid 2px yellow;
+}
+.sidebarblank{
+    grid-area: sidebarblank;
+    border: solid 2px green;
+}
+.main1{
+    grid-area: main1;
+    border: solid 2px purple;
+}
+.main2{
+    grid-area: main2;
+    border: solid 2px pink;
+}
+.main3{
+    grid-area: main3;
+    border: solid 2px tan;
+}
+.footer{
+    grid-area: footer;
+    border: solid 2px olivedrab;
+}
+.footerlinks{
+    grid-area: footerlinks;
+    border: solid 2px crimson;
+}    
+
+
