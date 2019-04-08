@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form{
+  align-items: center;
+  /*justify-items: center;*/
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  width: 65%;
+  background-color: transparent;
+  /*border-color: black;*/
+  border-style: ridge;
+  border-radius: 30px;
+  display: grid;
+  grid-template:
+          [row1-start]"fName . lName" 43px [row1-end]
+          [row2-start]"email . POB" 43px[row2-end]
+          [row3-start]"phone . food" 43px[row3-end]
+          [row4-start]"about about about" 65px[row4-end]
+          [row5-start]". button ." 20px[row5-end]
+
+
+  / 300px 55px 300px ;
+}
+
+.form *{
+  border-radius: 10px;
+
+}
+.fName{
+  grid-area: fName;
+  align-items: center;
+  align-content: center;
+}
+.lName{
+  grid-area: lName;
+
+}
+.email{
+  grid-area: email;
+}
+.POB{
+  grid-area: POB;
+}
+.phone{
+  grid-area: phone;
+}
+.food{
+  grid-area: food;
+
+}
+
+.about{
+  grid-area: about;
+  height: 70px;
+}
+.button{
+  grid-area: button;
+}
+
+
+
+/* This is badge container and items. */
+.badgeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+.badge{
+  align-items: center;
+  /*justify-items: center;*/
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  width: 65%;
+  background-color: transparent;
+  /*border-color: black;*/
+  border-style: ridge;
+  border-radius: 10px;
+  display: grid;
+  grid-template:
+          [title-start]"badgeTitle badgeTitle badgeTitle" 23px [title-end]
+          [row1-start]"name . phone" 43px [row1-end]
+          [row2-start]"POB . food" 43px[row2-end]
+          [row3-start]"email . ." 43px[row3-end]
+          [row4-start]". . ." 43px[row4-end]
+          [row5-start]"about about about" 65px[row5-end]
+
+
+  / 300px 55px 300px ;
+}
+.name{
+  grid-area: name;
+  border-radius: 10px;
+  border-style: groove;
+}
+.email{
+  grid-area: email;
+  border-radius: 10px;
+  border-style: groove;
+}
+.POB{
+  grid-area: POB;
+  border-radius: 10px;
+  border-style: groove;
+}
+.phone{
+  grid-area: phone;
+  border-radius: 10px;
+  border-style: groove;
+}
+.food{
+  grid-area: food;
+  border-radius: 10px;
+  border-style: groove;
+
+}
+.about{
+  grid-area: about;
+  border-style: ridge;
+  height: 70px;
+}
+.badgeTitle{
+  display: flex;
+  grid-area: badgeTitle;
+  background-color: antiquewhite;
+}
