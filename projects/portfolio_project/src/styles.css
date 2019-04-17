@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+}
+.main-container{
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  background-color: whitesmoke;
+}
+.header--divider {
+  background-color: #5e7ff8;
+  height: 0.25em;
+}
+a{
+  color: darkslategrey;
+  font-family: 'Roboto', 'sans-serif';
+  text-decoration: none;
+}

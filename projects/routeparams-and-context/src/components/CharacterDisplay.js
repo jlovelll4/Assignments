@@ -11,7 +11,7 @@ class CharacterDisplay extends Component {
             }
         }
     }
-
+    
     componentDidMount(){
         // On componentDidMount (page refresh), this.props.characters is empty
         // So i have this here to only use it if it exists to avoid crashing

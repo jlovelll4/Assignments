@@ -1,13 +1,30 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { withWeather } from "../context/WeatherProvider"
+import moment from "moment"
+import momentTimezone from "moment-timezone"
+import '../style.css'
+import {comments} from '../files/conditionalComments.json'
 
-class Header extends Component {
-    render() {
+function Header(props){
+    if (props.currently && props.city && props.st8) {
+        const format = 'MMMM Do YYYY, HH:MM:SS'
+        const timeStamp = moment.unix(props.currently.time).format(format)
+        const convertedTime = moment(props.currently.time * 1000).tz(props.forecast.timezone).format(format)
         return (
-            <div>
-                <nav>This is Header</nav>
+            <div className="header">
+                <span>Last Updated: {convertedTime} {props.forecast.timezone}</span>
+                <span>{props.city}, {props.st8}</span>
             </div>
-        );
+        )
+    } else{
+        const randNum = Math.floor(Math.random() * comments.length)
+        const randComment = comments[randNum]
+        return(
+            <div className="header">
+                <h3>{randComment}.</h3>
+            </div>
+        )
     }
 }
 
-export default Header;
+export default withWeather(Header);
