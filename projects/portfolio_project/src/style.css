@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif, Roboto;
+    font-weight: lighter;
+}
+@media screen and (min-width: 600px) {
+    section:nth-of-type(1) .button .mdi {
+        top: 16px;
+    }
+}
+.button{
+    padding: 10px 20px;
+    border: 2px solid rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,.1);
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    transition: all .5s;
+    cursor: pointer;
+    position: relative;
+}
+.button:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+.app-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #aaa9;
+}
+
+.app-container > button {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+}
+.div--divider{
+    background-color: olive;
+    height: 0.25em;
+}
+.header{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 200px;
+    top: 200px;
+}
+.nav {
+    height: 100vh;
+    width: 200px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    transition: left 600ms cubic-bezier(0, 1.57, 0.6,-1.2);
+}
+
+.nav > Link {
+    font-size: 2em;
+}
+
+.nav:hover{
+    background: rgba(0,0,0,0.9);
+    transition: 800ms
+}
+
+.nav-closed {
+    left: -200px;
+}
+
+.nav-open {
+    left: 0px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1119;
+    position: absolute;
+    transition: right 600ms cubic-bezier(0, 1.57, 0.6,-1.2);
+}
+
+.overlay-open {
+    right: 0px;
+}
+
+.overlay-closed {
+    right: -100vw;
+}
