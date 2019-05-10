@@ -13,11 +13,11 @@ class WeatherProvider extends Component {
     getCoords = (city, st8) => {
         console.log("getCoords is being reached")
         // Retrieve latitude and longitude from MapBox API based on user entered city, state.
+        const mapBoxKey = process.env.REACT_APP_MAPBOX_API_KEY
         const searchCity = city.trim().replace(" ", "%20")
         const searchState = st8.trim()
         const search = searchCity + "%20" + searchState
-        axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${search}.json?` +
-            `access_token=pk.eyJ1IjoiamxvdmVsbDMiLCJhIjoiY2p1YWRkOTRhMDFqcjN5bWhvZzV4cTR5OSJ9.uXYwOfwf5CUZcwwzs8bKBw`).then(response => {
+        axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${search}.json?${mapBoxKey}`).then(response => {
             this.setState({
                 city: city,
                 st8: st8,
@@ -31,7 +31,7 @@ class WeatherProvider extends Component {
 
      getWeather = () =>{
         // Retrieve weather data from DarkSky API.
-        const darkSkyKey = process.env.REACT_APP_API_KEY
+        const darkSkyKey = process.env.REACT_APP_DARKSKY_API_KEY
         const vSchoolCors = "https://vschool-cors.herokuapp.com?url="
         axios.get(`${vSchoolCors}https://api.darksky.net/forecast/${darkSkyKey}/${this.state.latitude},${this.state.longitude}?exclude=[minutely]`).then(
             response => {

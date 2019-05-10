@@ -1,0 +1,19 @@
+{
+  "name": "bounty_hunter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.3",
+    "morgan": "^1.9.1",
+    "uuidv4": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James Lovell",
+  "license": "ISC"
+}
